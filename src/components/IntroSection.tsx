@@ -2,7 +2,7 @@ import { HeartHandshake, Compass, Shield, UserCheck } from "lucide-react";
 
 export default function IntroSection() {
   return (
-    <section id="about" className="py-16 lg:py-24 bg-[#FBF9F5] border-b border-[#E2DDD5]/60">
+    <section id="about" className="py-12 lg:py-18 bg-[#FBF9F5] border-b border-[#E2DDD5]/60">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
         
         {/* Category Pill */}

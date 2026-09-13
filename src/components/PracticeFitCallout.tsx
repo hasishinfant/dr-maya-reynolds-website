@@ -6,7 +6,7 @@ interface PracticeFitCalloutProps {
 
 export default function PracticeFitCallout({ onOpenBooking }: PracticeFitCalloutProps) {
   return (
-    <section className="py-16 lg:py-20 bg-[#F2EEE7]/80 border-b border-[#E2DDD5]/60">
+    <section className="py-12 lg:py-16 bg-[#F2EEE7]/80 border-b border-[#E2DDD5]/60">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
         
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#E6ECE8] text-[#3D5A50] text-xs font-semibold uppercase tracking-wider border border-[#C9D7CF]">
@@ -28,7 +28,7 @@ export default function PracticeFitCallout({ onOpenBooking }: PracticeFitCallout
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#3D5A50] hover:bg-[#2D443C] text-white text-sm font-semibold rounded-full shadow-md transition-all"
           >
             <Calendar className="w-4 h-4" />
-            <span>Start with One Conversation</span>
+            <span>Start with a Conversation</span>
           </button>
         </div>
 

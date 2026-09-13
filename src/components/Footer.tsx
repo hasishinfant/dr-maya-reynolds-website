@@ -78,7 +78,7 @@ export default function Footer({ onOpenBooking }: FooterProps) {
                 onClick={onOpenBooking}
                 className="w-full py-2.5 bg-[#3D5A50] hover:bg-[#2D443C] text-white font-semibold rounded-lg transition-colors text-xs"
               >
-                Schedule Consultation
+                Start with a Conversation
               </button>
             </div>
           </div>

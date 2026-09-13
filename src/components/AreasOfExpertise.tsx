@@ -76,11 +76,11 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
   ];
 
   return (
-    <section id="specialties" className="py-16 lg:py-24 bg-[#FBF9F5] border-b border-[#E2DDD5]/60">
+    <section id="specialties" className="py-12 lg:py-18 bg-[#FBF9F5] border-b border-[#E2DDD5]/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16 lg:mb-20">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-12 lg:mb-16">
           <span className="px-3.5 py-1 rounded-full bg-[#E6ECE8] text-[#3D5A50] text-xs font-semibold uppercase tracking-wider border border-[#C9D7CF]">
             Clinical Modalities & Expertise
           </span>
@@ -93,14 +93,14 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
         </div>
 
         {/* Visual Editorial Storytelling System */}
-        <div className="space-y-16 lg:space-y-24">
+        <div className="space-y-12 lg:space-y-16">
           {approaches.map((item, index) => {
             const isEven = index % 2 === 0;
 
             return (
               <div
                 key={item.id}
-                className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-[#F2EEE7]/60 p-6 sm:p-10 rounded-3xl border border-[#E2DDD5] shadow-xs ${
+                className={`grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-[#F2EEE7]/60 p-6 sm:p-8 rounded-3xl border border-[#E2DDD5] shadow-xs ${
                   isEven ? "" : "lg:flex-row-reverse"
                 }`}
               >
@@ -110,12 +110,12 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
                     isEven ? "" : "lg:order-2"
                   }`}
                 >
-                  <div className="relative w-full aspect-square max-w-md rounded-2xl overflow-hidden bg-white border border-[#E2DDD5] shadow-md group">
+                  <div className="relative w-full aspect-square max-w-sm rounded-2xl overflow-hidden bg-white border border-[#E2DDD5] shadow-md group">
                     <Image
                       src={item.image}
                       alt={item.imageAlt}
                       fill
-                      sizes="(max-width: 768px) 100vw, 450px"
+                      sizes="(max-width: 768px) 100vw, 400px"
                       className="object-cover group-hover:scale-103 transition-transform duration-500 ease-out"
                     />
                     <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -124,7 +124,7 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
 
                 {/* Content Column: Editorial Copy & Scannable Details */}
                 <div
-                  className={`space-y-5 ${
+                  className={`space-y-4 ${
                     isEven ? "lg:col-span-7" : "lg:col-span-7 lg:order-1"
                   }`}
                 >
@@ -134,7 +134,7 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-serif-title text-3xl sm:text-4xl font-bold text-[#1C2522] leading-tight">
+                  <h3 className="font-serif-title text-2xl sm:text-3xl lg:text-4xl font-bold text-[#1C2522] leading-tight">
                     {item.title}
                   </h3>
 
@@ -148,34 +148,34 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
                     {item.description}
                   </p>
 
-                  {/* Compact Modality Chips */}
-                  <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-800 font-medium">
+                  {/* De-emphasized Lightweight Modality Chips */}
+                  <div className="pt-2 flex flex-wrap gap-2 text-xs text-slate-800 font-medium">
                     {item.tags.map((tag, tIdx) => (
-                      <div
+                      <span
                         key={tIdx}
-                        className="flex items-center gap-2 bg-white/90 px-3 py-2 rounded-xl border border-[#E2DDD5] shadow-2xs"
+                        className="inline-flex items-center gap-1.5 bg-[#E6ECE8]/70 text-[#1F302A] px-3 py-1.5 rounded-full border border-[#C9D7CF]/60 text-xs font-medium"
                       >
                         <Check className="w-3.5 h-3.5 text-[#3D5A50] shrink-0" />
                         <span>{tag}</span>
-                      </div>
+                      </span>
                     ))}
-                  </div>
-
-                  {/* Action Button */}
-                  <div className="pt-3">
-                    <button
-                      onClick={onOpenBooking}
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#3D5A50] hover:bg-[#2D443C] text-white text-xs font-semibold rounded-full shadow-xs hover:shadow-md transition-all group"
-                    >
-                      <span>Reach Out for a Conversation</span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                    </button>
                   </div>
                 </div>
 
               </div>
             );
           })}
+        </div>
+
+        {/* Single Unifying Section CTA */}
+        <div className="mt-12 text-center">
+          <button
+            onClick={onOpenBooking}
+            className="inline-flex items-center gap-2.5 px-8 py-3.5 bg-[#3D5A50] hover:bg-[#2D443C] text-white text-sm font-semibold rounded-full shadow-md hover:shadow-lg transition-all group"
+          >
+            <span>Start with a Conversation</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </button>
         </div>
 
       </div>

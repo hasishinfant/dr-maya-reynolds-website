@@ -3,7 +3,7 @@ import { MapPin, Sun, ShieldCheck, Video, Clock } from "lucide-react";
 
 export default function OurOfficeSection() {
   return (
-    <section id="office" className="py-16 lg:py-24 bg-[#FBF9F5] border-b border-[#E2DDD5]/60">
+    <section id="office" className="py-12 lg:py-18 bg-[#FBF9F5] border-b border-[#E2DDD5]/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -79,12 +79,6 @@ export default function OurOfficeSection() {
               </div>
 
             </div>
-
-            {/* Testimonial Quote */}
-            <div className="bg-[#E6ECE8]/60 p-4 rounded-xl border border-[#C9D7CF]/60 text-xs text-[#1F302A] italic">
-              &ldquo;Clients frequently share that the quiet atmosphere, natural lighting, and comfortable environment help them feel grounded and at ease the moment they enter.&rdquo;
-            </div>
-
           </div>
 
           {/* Right Column: Authentic Office Image Gallery */}

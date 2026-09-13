@@ -9,7 +9,7 @@ interface HeroProps {
 
 export default function Hero({ onOpenBooking }: HeroProps) {
   return (
-    <section className="relative overflow-hidden bg-[#FBF9F5] pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-[#E2DDD5]/60">
+    <section className="relative overflow-hidden bg-[#FBF9F5] pt-6 pb-12 lg:pt-12 lg:pb-18 border-b border-[#E2DDD5]/60">
       {/* Background Soft Glow */}
       <div className="absolute top-0 right-0 -z-10 w-96 h-96 bg-[#E6ECE8]/50 rounded-full blur-3xl opacity-70 pointer-events-none" />
       <div className="absolute bottom-0 left-10 -z-10 w-80 h-80 bg-[#F2EEE7]/80 rounded-full blur-3xl opacity-60 pointer-events-none" />
@@ -31,9 +31,9 @@ export default function Hero({ onOpenBooking }: HeroProps) {
               Feeling overwhelmed? You don’t need to have all the answers to <span className="text-[#3D5A50] italic font-normal">begin</span>.
             </h1>
 
-            {/* Lead Paragraph */}
+            {/* Lead Paragraph — Crisp 5-Second Clarity */}
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl font-normal">
-              Therapy for adults who feel exhausted by constant worry, high pressure, or the weight of earlier life experiences. You don&apos;t have to carry it all by yourself.
+              Grounded psychological therapy with <strong className="font-semibold text-[#1C2522]">Dr. Maya Reynolds, PsyD</strong>—supporting adults exhausted by high pressure, chronic worry, or past trauma through paced, integrative EMDR, CBT, and somatic practices.
             </p>
 
             {/* CTAs */}

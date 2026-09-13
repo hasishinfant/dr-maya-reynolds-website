@@ -54,19 +54,22 @@ export default function WhoWeHelp() {
   ];
 
   return (
-    <section id="who-i-help" className="py-16 lg:py-24 bg-[#F2EEE7]/50 border-b border-[#E2DDD5]/60">
+    <section id="who-i-help" className="py-12 lg:py-18 bg-[#F2EEE7]/50 border-b border-[#E2DDD5]/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-12 lg:mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-12 lg:mb-14">
           <span className="px-3.5 py-1 rounded-full bg-[#E6ECE8] text-[#3D5A50] text-xs font-semibold uppercase tracking-wider border border-[#C9D7CF]">
-            Recognizing What You Might Be Experiencing
+            Client Recognition & Specificity
           </span>
           <h2 className="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C2522]">
             Is This Therapy Space Right for You?
           </h2>
-          <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-            Specialized psychological support tailored specifically for adults who are holding everything together on the outside while struggling on the inside.
+          <p className="text-base sm:text-lg text-[#3D5A50] font-semibold leading-snug">
+            &ldquo;High-functioning on the outside, exhausted on the inside.&rdquo;
+          </p>
+          <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal max-w-2xl mx-auto">
+            Specialized psychological support tailored specifically for adults who are holding everything together professionally and socially, while quietly struggling internally with worry, burnout, or unaddressed life experiences.
           </p>
         </div>
 

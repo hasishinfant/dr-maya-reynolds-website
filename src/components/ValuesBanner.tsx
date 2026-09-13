@@ -6,7 +6,7 @@ interface ValuesBannerProps {
 
 export default function ValuesBanner({ onOpenBooking }: ValuesBannerProps) {
   return (
-    <section className="py-16 lg:py-20 bg-[#3D5A50] text-white relative overflow-hidden">
+    <section className="py-12 lg:py-16 bg-[#3D5A50] text-white relative overflow-hidden">
       {/* Background Soft Pattern */}
       <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
 
