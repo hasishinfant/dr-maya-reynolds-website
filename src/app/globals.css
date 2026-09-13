@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  
+  --color-canvas: #FBF9F5;
+  --color-sage-50: #F4F7F5;
+  --color-sage-100: #E6ECE8;
+  --color-sage-200: #C9D7CF;
+  --color-sage-600: #3D5A50;
+  --color-sage-700: #2D443C;
+  --color-sage-800: #1F302A;
+  
+  --color-slate-900: #1C2522;
+  --color-slate-800: #2A3632;
+  --color-slate-700: #394742;
+  --color-slate-600: #4B5854;
+  --color-slate-500: #6B7975;
+  
+  --color-sand-50: #F6F3EE;
+  --color-sand-100: #F2EEE7;
+  --color-sand-200: #E4DDD2;
+  --color-sand-300: #D5CBBC;
+  
+  --color-accent-taupe: #E3DAD0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF9F5;
+  color: #1C2522;
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-serif-title {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* Custom focus styles for a11y */
+:focus-visible {
+  outline: 2px solid #3D5A50;
+  outline-offset: 3px;
+}
+
