@@ -16,7 +16,7 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
       headline: "Processing past experiences to restore emotional safety and nervous system regulation.",
       description:
         "Trauma work is an important part of my practice. I work with adults who have experienced single-incident trauma as well as complex, long-standing childhood or relational stress patterns. Our work is paced carefully, focusing on safety, stabilization, and helping you feel grounded.",
-      image: "/images/approach-trauma.png",
+      image: "/images/approach-trauma.jpg",
       imageAlt: "Abstract 3D tactile relief artwork symbolizing emotional grounding and trauma stabilization",
       tags: [
         "Eye Movement Desensitization & Reprocessing (EMDR)",
@@ -32,7 +32,7 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
       headline: "Easing constant worry, physical tension, and sleep disruption.",
       description:
         "Clients frequently come to me feeling 'functional' on the outside while quietly struggling with constant worry, somatic tension in their body, or difficulty sleeping. We address both the cognitive overthinking and the physiological signals your body is holding.",
-      image: "/images/approach-anxiety.png",
+      image: "/images/approach-anxiety.jpg",
       imageAlt: "Abstract 3D tactile relief artwork symbolizing nervous system calm and easing anxiety",
       tags: [
         "Easing constant worry & cognitive overthinking",
@@ -54,7 +54,7 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
         "Slowing down to prevent chronic burnout",
         "Developing self-compassion & clarity",
       ],
-      image: "/images/approach-burnout.png",
+      image: "/images/approach-burnout.jpg",
       imageAlt: "Abstract 3D tactile relief artwork symbolizing burnout recovery and spacious breathing room",
     },
     {
@@ -64,7 +64,7 @@ export default function AreasOfExpertise({ onOpenBooking }: AreasOfExpertiseProp
       headline: "Evidence-based methods tailored specifically to your unique needs.",
       description:
         "No two people are the same. I integrate evidence-based therapeutic methods to help you understand both the emotional and physiological sides of what you're experiencing.",
-      image: "/images/approach-integrative.png",
+      image: "/images/approach-integrative.jpg",
       imageAlt: "Abstract 3D tactile relief artwork symbolizing mind and body integration and balance",
       tags: [
         "Cognitive-Behavioral Therapy (CBT)",
